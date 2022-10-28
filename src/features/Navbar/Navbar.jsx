@@ -18,7 +18,7 @@ function Navbar(props) {
       <div className="logo-holder">
         <div className="menu-icon">
           <img
-            src="src/assets/images/icon-menu.svg"
+            src="../src/assets/images/icon-menu.svg"
             alt="menu icon"
             onClick={openMenu}
           />
@@ -50,7 +50,7 @@ function Navbar(props) {
         </div>
         <div className="avatar">
           <img
-            src="./src/assets/images/image-avatar.png"
+            src="../src/assets/images/image-avatar.png"
             alt="profile avatar"
           />
         </div>
