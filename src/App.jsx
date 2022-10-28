@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Navbar from "./features/Navbar/Navbar";
-import Main from "../src/features/Main/Main";
+import MainContent from "./features/Main/MainContent";
 function App() {
   const [amount, setAmount] = useState(0);
   const [cart, setCart] = useState(0);
@@ -33,7 +33,7 @@ function App() {
         storeCart={cart}
         delCart={deleteCart}
       />
-      <Main
+      <MainContent
         pickedAmount={amount}
         setPickedAmount={setAmount}
         addCart={handleAddCart}
