@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Navbar from "./features/Navbar/Navbar";
-import Main from "./features/Main/Main";
+import Main from "../src/features/Main/Main";
 function App() {
   const [amount, setAmount] = useState(0);
   const [cart, setCart] = useState(0);
