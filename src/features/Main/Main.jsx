@@ -1,7 +1,8 @@
 import React from "react";
 import "../Styles/main.scss";
 import DesktopSwiper from "../../component/DesktopSwiper";
-import MobileSwiper from "../../../src/component/MobileSwiper";
+// import MobileSwiper from "../../../src/component/MobileSwiper";
+import MobileSwiper from "../../component/MobileSwiper";
 import { useState } from "react";
 
 function Main(props) {
