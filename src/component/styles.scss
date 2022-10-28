@@ -39,11 +39,11 @@
 }
 
 .swiper-button-prev::after {
-  content: url("src/assets/images/icon-previous.svg");
+  content: url("../src/images/icon-previous.svg");
   left: 45%;
 }
 .swiper-button-next::after {
-  content: url("src/assets/images/icon-next.svg");
+  content: url("../src/images/icon-next.svg");
   left: 50%;
 }
 

@@ -19,7 +19,7 @@ function CartDetails(props) {
                 <div className="cart-details">
                   <div>
                     <img
-                      src="../src/assets/images/image-product-1-thumbnail.jpg"
+                      src="../src/images/image-product-1-thumbnail.jpg"
                       alt="shoe image"
                       className="thumbnail"
                     />
@@ -35,7 +35,7 @@ function CartDetails(props) {
                   </div>
                   <div>
                     <img
-                      src="../src/assets/images/icon-delete.svg"
+                      src="../src/images/icon-delete.svg"
                       alt="delete icon"
                       className="delete"
                       onClick={props.delCartFunc}
