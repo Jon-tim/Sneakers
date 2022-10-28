@@ -21,8 +21,7 @@ function CartDetails(props) {
                     <img
                       src="../src/images/image-product-1-thumbnail.jpg"
                       alt="shoe image"
-                      className="thumbnail"
-                    />
+                      className="thumbnail"/>
                     <div className="prod-name">
                       <p className="name-edition">fall limited edition sneakers</p>
                       <p className="total-cont">

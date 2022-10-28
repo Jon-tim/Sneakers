@@ -13,35 +13,35 @@ function DesktopSwiper() {
       <div className="grid-container">
         <div className="large">
           <img
-            src={`./src/images/${src}`}
+            src={`src/images/${src}`}
             alt="image product"
             data-image="image-product-1"
           />
         </div>
         <div className="grid-items" onClick={handleScr}>
           <img
-            src="./src/images/image-product-1-thumbnail.jpg"
+            src="src/images/image-product-1-thumbnail.jpg"
             alt="image product"
             data-image="image-product-1.jpg"
           />
         </div>
         <div className="grid-items" onClick={handleScr}>
           <img
-            src="./src/images/image-product-2-thumbnail.jpg"
+            src="src/images/image-product-2-thumbnail.jpg"
             alt="image product"
             data-image="image-product-2.jpg"
           />
         </div>
         <div className="grid-items" onClick={handleScr}>
           <img
-            src="./src/images/image-product-3-thumbnail.jpg"
+            src="src/images/image-product-3-thumbnail.jpg"
             alt="image product"
             data-image="image-product-3.jpg"
           />
         </div>
         <div className="grid-items" onClick={handleScr}>
           <img
-            src="./src/images/image-product-4-thumbnail.jpg"
+            src="src/images/image-product-4-thumbnail.jpg"
             alt="image product"
             data-image="image-product-4.jpg"
           />
