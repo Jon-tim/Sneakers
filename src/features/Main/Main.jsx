@@ -1,7 +1,5 @@
-// import "./main.scss";
 import React from "react";
 import "../Styles/main.scss";
-// import MobileSwiper from "../../MobileSwiper";
 import DesktopSwiper from "../../component/DesktopSwiper";
 import MobileSwiper from "../../../src/component/MobileSwiper";
 import { useState } from "react";
