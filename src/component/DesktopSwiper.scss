@@ -1,0 +1,38 @@
+.myDesktopSwiper {
+  display: none;
+  //   height: 500px;
+  width: 90%;
+  @media (min-width: 768px) {
+    display: block;
+  }
+}
+
+.grid-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  grid-auto-rows: auto;
+}
+
+.large {
+  grid-column: 1 / -1;
+  grid-row: 1/2;
+}
+.grid-items {
+  grid-row: 2/3;
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+.grid-items img,
+.large img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.grid-items,
+.large {
+  border-radius: 15px;
+}

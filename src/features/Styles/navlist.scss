@@ -1,0 +1,43 @@
+@import "variables.scss";
+@import "reuseables.scss";
+
+.NavList {
+  height: 100%;
+  @include align;
+  ul {
+    @include align;
+    height: 100%;
+    gap: 2rem;
+    li {
+      list-style: none;
+      @include align;
+      height: 100%;
+      a {
+        @include align;
+        height: 100%;
+        font-size: 0.9rem;
+        text-transform: capitalize;
+        text-decoration: none;
+        color: $Dark-grayish-blue;
+
+        &:hover {
+          color: $Very-dark-blue;
+          position: relative;
+          &::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            bottom: 0px;
+            height: 4px;
+            background-color: $Orange;
+            border-top-right-radius: 2px;
+            border-top-left-radius: 2px;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 678px) {
+    display: none;
+  }
+}

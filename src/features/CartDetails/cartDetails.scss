@@ -1,0 +1,143 @@
+@import "../Styles/variables";
+@import "../Styles/reuseables";
+
+.cart-modal {
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.15);
+  background-color: $White;
+  position: absolute;
+  z-index: 100;
+  top: 90px;
+  left: 0.5rem;
+  right: 0.5rem;
+  width: 330px;
+  margin: 0 auto;
+  border-radius: 10px;
+  .cart-box,
+  .detail-cont {
+    padding: 1.5rem;
+    @media (min-width: 768px) {
+      padding: 1rem;
+    }
+  }
+  .cart-box p {
+    text-transform: capitalize;
+    color: $Very-dark-blue;
+    font-weight: 600;
+  }
+  @media (min-width: 768px) {
+    max-width: 350px;
+    top: 70px;
+    left: 0rem;
+    right: 0rem;
+  }
+}
+
+.detail-cont {
+  //   height: 170px;
+  width: 100%;
+  @include align;
+  flex-direction: column;
+  border-top: 2px solid $Light-grayish-blue;
+  gap: 1.5rem;
+
+  button {
+    width: 100%;
+    text-transform: capitalize;
+    color: $White;
+    font-weight: 600;
+    background-color: $Orange;
+    border: none;
+    border-radius: 10px;
+    height: 60px;
+    font-size: inherit;
+    cursor: pointer;
+    @media (min-width: 768px) {
+      height: 45px;
+    }
+  }
+  @media (min-width: 768px) {
+    gap: 1rem;
+  }
+}
+
+.cart-details {
+  width: 100%;
+  @include align;
+  // padding: unset;
+  justify-content: space-between;
+  //   height: 60px;
+  div:nth-child(1) {
+    @include align;
+    gap: 1rem;
+    .name-edition {
+      font-weight: bold;
+      //   width: 170px;
+      text-transform: capitalize;
+      white-space: nowrap;
+      overflow-x: hidden;
+      text-overflow: ellipsis;
+      color: $Dark-grayish-blue;
+    }
+  }
+
+  .thumbnail {
+    border-radius: 10px;
+    height: 60px;
+    width: 60px;
+  }
+
+  @media (min-width: 768px) {
+    .thumbnail {
+      width: 40px;
+      height: 40px;
+      border-radius: 8px;
+    }
+    .name-edition {
+      //   width: 390px;
+      white-space: unset;
+      overflow-x: unset;
+      text-overflow: unset;
+      font-size: 0.8rem;
+    }
+  }
+}
+
+.total-cont {
+  color: $Dark-grayish-blue;
+  .total {
+    margin-left: 0.5rem;
+    color: $Very-dark-blue;
+    font-weight: 600;
+  }
+  @media (min-width: 768px) {
+    // gap: 0.25rem;
+    font-size: 0.8rem;
+  }
+}
+
+.prod-name {
+  @include align;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  @media (min-width: 768px) {
+    gap: 0.25rem;
+  }
+}
+
+.err {
+  font-weight: 600;
+  color: $Dark-grayish-blue;
+  @include align-justify;
+}
+
+.delete:hover {
+  opacity: 0.5;
+}
+
+@media (min-width: 420px) {
+  .cart-modal {
+    left: unset;
+    right: 0px;
+  }
+}
