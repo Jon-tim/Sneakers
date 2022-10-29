@@ -46,10 +46,7 @@ function Navbar(props) {
           </div>
         </div>
         <div className="avatar">
-          <img
-            src="../../assets/images/image-avatar.png"
-            alt="profile avatar"
-          />
+          <img src="../../assets/images/icon-menu.svg" alt="profile avatar" />
         </div>
       </div>
       {/* MOBILE NAVIGATION SECTION---------------- */}
