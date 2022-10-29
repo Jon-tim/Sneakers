@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "../Styles/nav.scss";
 import NavList from "../../component/NavList";
 import CartDetails from "../CartDetails/CartDetails";
+import menu from "../../assets/images/icon-menu.svg";
 
 function Navbar(props) {
   const [mobile, setMobile] = useState(false);
@@ -17,11 +18,7 @@ function Navbar(props) {
     <div className="nav">
       <div className="logo-holder">
         <div className="menu-icon">
-          <img
-            src="./src/assets/images/icon-menu.svg"
-            alt="menu icon"
-            onClick={openMenu}
-          />
+          <img src={menu} alt="menu icon" onClick={openMenu} />
         </div>
         <div className="logo">
           <svg width="138" height="20" xmlns="http://www.w3.org/2000/svg">
@@ -50,7 +47,7 @@ function Navbar(props) {
         </div>
         <div className="avatar">
           <img
-            src="../src/assets/images/image-avatar.png"
+            src="../../assets/images/image-avatar.png"
             alt="profile avatar"
           />
         </div>
