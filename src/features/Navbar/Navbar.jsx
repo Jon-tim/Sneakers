@@ -18,7 +18,7 @@ function Navbar(props) {
       <div className="logo-holder">
         <div className="menu-icon">
           <img
-            src="./src/images/icon-menu.svg"
+            src="./src/assets/images/icon-menu.svg"
             alt="menu icon"
             onClick={openMenu}
           />
