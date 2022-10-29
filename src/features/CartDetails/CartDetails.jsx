@@ -1,8 +1,13 @@
 import React from "react";
 import "./cartDetails.scss";
+import deleteIcon from "../../assets/images/icon-delete.svg";
+import thumbnail from "../../assets/images/image-product-1-thumbnail.jpg";
 function CartDetails(props) {
   return (
-    <section style={{ display: props.initChildShow ? "block" : "none" }} className="cart-modal">
+    <section
+      style={{ display: props.initChildShow ? "block" : "none" }}
+      className="cart-modal"
+    >
       <div className="cart-modal-content">
         <div className="cart-box">
           <p>cart</p>
@@ -19,11 +24,14 @@ function CartDetails(props) {
                 <div className="cart-details">
                   <div>
                     <img
-                      src="src/assets/images/image-product-1-thumbnail.jpg"
+                      src={thumbnail}
                       alt="shoe image"
-                      className="thumbnail"/>
+                      className="thumbnail"
+                    />
                     <div className="prod-name">
-                      <p className="name-edition">fall limited edition sneakers</p>
+                      <p className="name-edition">
+                        fall limited edition sneakers
+                      </p>
                       <p className="total-cont">
                         $125.00 x <span>{props.cartNum} =</span>
                         <span className="total">
@@ -34,7 +42,7 @@ function CartDetails(props) {
                   </div>
                   <div>
                     <img
-                      src="src/assets/images/icon-delete.svg"
+                      src={deleteIcon}
                       alt="delete icon"
                       className="delete"
                       onClick={props.delCartFunc}

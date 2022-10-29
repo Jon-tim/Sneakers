@@ -4,6 +4,9 @@ import DesktopSwiper from "../../component/DesktopSwiper";
 import MobileSwiper from "../../component/MobileSwiper";
 import { useState } from "react";
 
+import minus from "../../assets/images/icon-minus.svg";
+import plus from "../../assets/images/icon-plus.svg";
+
 function MainContent(props) {
   const [cart, setCart] = useState();
 
@@ -47,17 +50,13 @@ function MainContent(props) {
           <div className="order-quantity">
             <div className="order">
               <img
-                src="./src/assets/images/icon-minus.svg"
+                src={minus}
                 alt="minus sign"
                 onClick={handleMinus}
                 style={{ opacity: props.pickedAmount === 0 ? "0.5" : "1" }}
               />
               <p>{props.pickedAmount}</p>
-              <img
-                src="../src/assets/images/icon-plus.svg"
-                alt="plus sign"
-                onClick={handleAdd}
-              />
+              <img src={plus} alt="plus sign" onClick={handleAdd} />
             </div>
             <button type="submit" onClick={props.addCart}>
               <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg">
