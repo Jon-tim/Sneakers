@@ -47,14 +47,14 @@ function MainContent(props) {
           <div className="order-quantity">
             <div className="order">
               <img
-                src="./src/images/icon-minus.svg"
+                src="./src/assets/images/icon-minus.svg"
                 alt="minus sign"
                 onClick={handleMinus}
                 style={{ opacity: props.pickedAmount === 0 ? "0.5" : "1" }}
               />
               <p>{props.pickedAmount}</p>
               <img
-                src="./src/images/icon-plus.svg"
+                src="../src/assets/images/icon-plus.svg"
                 alt="plus sign"
                 onClick={handleAdd}
               />

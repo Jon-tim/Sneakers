@@ -49,7 +49,10 @@ function Navbar(props) {
           </div>
         </div>
         <div className="avatar">
-          <img src="./src/images/image-avatar.png" alt="profile avatar" />
+          <img
+            src="../src/assets/images/image-avatar.png"
+            alt="profile avatar"
+          />
         </div>
       </div>
       {/* MOBILE NAVIGATION SECTION---------------- */}
@@ -62,7 +65,7 @@ function Navbar(props) {
           style={{ transform: mobile ? "translateX(0%)" : "translateX(-100%)" }}
         >
           <img
-            src="./src/images/icon-close.svg "
+            src="../src/assets/images/icon-close.svg "
             alt="close icon"
             onClick={closeMenu}
           />
