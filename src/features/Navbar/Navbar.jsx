@@ -3,6 +3,8 @@ import "../Styles/nav.scss";
 import NavList from "../../component/NavList";
 import CartDetails from "../CartDetails/CartDetails";
 import menu from "../../assets/images/icon-menu.svg";
+import avatar from "../../assets/images/image-avatar.png";
+import close from "../../assets/images/icon-close.svg";
 
 function Navbar(props) {
   const [mobile, setMobile] = useState(false);
@@ -46,7 +48,7 @@ function Navbar(props) {
           </div>
         </div>
         <div className="avatar">
-          <img src="../../assets/images/icon-menu.svg" alt="profile avatar" />
+          <img src={avatar} alt="profile avatar" />
         </div>
       </div>
       {/* MOBILE NAVIGATION SECTION---------------- */}
@@ -58,11 +60,7 @@ function Navbar(props) {
           className="nav-container"
           style={{ transform: mobile ? "translateX(0%)" : "translateX(-100%)" }}
         >
-          <img
-            src="../src/assets/images/icon-close.svg "
-            alt="close icon"
-            onClick={closeMenu}
-          />
+          <img src={close} alt="close icon" onClick={closeMenu} />
           <ul>
             <li>
               <a href="#">collections</a>
