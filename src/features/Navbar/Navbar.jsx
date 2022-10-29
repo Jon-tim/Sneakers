@@ -56,6 +56,7 @@ function Navbar(props) {
         className="mobile-nav"
         style={{ transform: mobile ? "translateX(0%)" : "translateX(-100%)" }}
       >
+        <div className="overlay" onClick={closeMenu}></div>
         <div
           className="nav-container"
           style={{ transform: mobile ? "translateX(0%)" : "translateX(-100%)" }}
