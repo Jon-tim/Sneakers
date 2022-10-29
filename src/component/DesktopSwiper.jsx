@@ -19,7 +19,7 @@ function DesktopSwiper() {
       <div className="grid-container">
         <div className="large">
           <img
-            src={`../src/assets/images/${src}`}
+            src={`../../assets/images/${src}`}
             // src={bigImg}
             alt="image product"
             data-image="image-product-1"

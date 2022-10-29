@@ -3,13 +3,14 @@
 
 .main {
   // height: 50%;
+  margin-top: 80px;
   display: flex;
   flex-direction: column;
   width: 100%;
   max-width: 950px;
   @media (min-width: 768px) {
     // align-items: center;
-
+    margin-top: unset;
     margin: 40px auto 0px;
     justify-content: center;
     flex-direction: row;
