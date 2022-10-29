@@ -41,7 +41,7 @@ function DesktopSwiper() {
         </div>
         <div className="grid-items" onClick={handleScr}>
           <img
-            src="../src/assets/images/image-product-4-thumbnail.jpg"
+            src="../../src/assets/images/image-product-4-thumbnail.jpg"
             alt="image product"
             data-image="image-product-4.jpg"
           />
