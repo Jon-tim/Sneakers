@@ -3,6 +3,7 @@
 
 .nav {
   @include align;
+  background-color: white;
   // overflow-x: hidden;
   position: relative;
   position: fixed;
@@ -80,7 +81,7 @@
   @media (min-width: 1024px) {
     padding: 0rem;
   }
-  
+
   @media (min-width: 768px) {
     position: relative;
     border-bottom: 2px solid $Light-grayish-blue;
