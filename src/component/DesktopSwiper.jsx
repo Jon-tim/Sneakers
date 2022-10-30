@@ -14,12 +14,16 @@ function DesktopSwiper() {
     setSrc((prev) => (prev = event.target.dataset.image));
   };
 
+  // const bigImage = `../src/assets/images/${src}.jpg`;
+
   return (
     <div className="myDesktopSwiper">
       <div className="grid-container">
         <div className="large">
           <img
-            src={`../../assets/images/${src}`}
+          src="../assets/images/image-product-1.jpg"
+            // src={bigImage}
+            // src={`../src/assets/images/${src}.jpg`}
             // src={bigImg}
             alt="image product"
             data-image="image-product-1"
