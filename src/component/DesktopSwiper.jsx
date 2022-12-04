@@ -14,7 +14,7 @@ import thumb4 from "../assets/images/image-product-4.jpg";
 import Bigthumbnail from "../assets/images/image-product-1.jpg";
 
 function DesktopSwiper() {
-  const [src, setSrc] = useState("../src/assets/images/image-product-1.jpg");
+  const [src, setSrc] = useState(thumb1);
   const handleScr = function (event) {
     setSrc((prev) => (prev = event.target.dataset.image));
   };
