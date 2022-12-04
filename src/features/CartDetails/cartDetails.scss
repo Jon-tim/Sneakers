@@ -71,12 +71,21 @@
     gap: 1rem;
     .name-edition {
       font-weight: bold;
-      //   width: 170px;
+      width: 170px;
+
       text-transform: capitalize;
       white-space: nowrap;
       overflow-x: hidden;
       text-overflow: ellipsis;
       color: $Dark-grayish-blue;
+      @media (min-width: 500px) {
+        // color: red;
+        width: unset;
+        white-space: unset;
+        overflow-x: unset;
+        text-overflow: unset;
+        // font-size: 0.8rem;
+      }
     }
   }
 
@@ -91,13 +100,6 @@
       width: 40px;
       height: 40px;
       border-radius: 8px;
-    }
-    .name-edition {
-      //   width: 390px;
-      white-space: unset;
-      overflow-x: unset;
-      text-overflow: unset;
-      font-size: 0.8rem;
     }
   }
 }
